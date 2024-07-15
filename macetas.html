@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VERDORA | Comprar</title>
+    <link rel="stylesheet" href="comprar.css">
+    <link rel="stylesheet" href="macetas.css">
+</head>
+<body>
+    <nav> 
+        <div class="nav-logo">
+            <a href="index.html">
+                <img src="assets/logo svg.svg" alt="Verdora Logo">
+            </a>
+        </div>
+        <button class="abrir-menu" id="abrir-menu">
+            <img src="assets/menu.svg" alt="Abrir Menú">
+        </button>
+        <div class="nav-mediaq" id="nav-mediaq">
+            <button class="cerrar-menu" id="cerrar-menu">
+                <img src="assets/menu.svg" alt="Cerrar Menú">
+            </button>
+            <ul class="nav-links">
+                <li class="link"><a href="index.html">Inicio</a></li>
+                <li class="link"><a href="donar.html">Donar</a></li>
+                <li class="link"><a href="comprar.html">Comprar</a></li>
+                <li class="link"><a href="contactanos.html">Contáctanos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="comprar-section">
+        <h1>COMPRAS</h1>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar...">
+            <button type="submit"><img src="assets/icon-search.svg" alt="Buscar"></button>
+        </div>
+        <div class="comprar-grid">
+            <a href="macetas.html" class="comprar-item selected">
+                <img src="assets/maceta1.png" alt="Macetas">
+                <h2 class="selected_text">Macetas</h2>
+            </a>
+            <a href="fertilizantes.html" class="comprar-item">
+                <img src="assets/fertilizante1.png" alt="Fertilizantes">
+                <h2>Fertilizantes</h2>
+            </a>
+            <a href="semillas.html" class="comprar-item">
+                <img src="assets/semillas.png" alt="Semillas">
+                <h2>Semillas</h2>
+            </a>
+            <a href="insecticidas.html" class="comprar-item">
+                <img src="assets/Insecticida1.png" alt="Insecticidas">
+                <h2>Insecticidas</h2>
+            </a>
+            <a href="flores.html" class="comprar-item">
+                <img src="assets/flores1.png" alt="Flores">
+                <h2>Flores</h2>
+            </a>
+            <a href="herramientas.html" class="comprar-item">
+                <img src="assets/heramientas.png" alt="Herramientas">
+                <h2>Herramientas</h2>
+            </a>
+        </div>
+    </section>
+    
+    <section class="comprar-section comprar-macetas">
+        <h1>Macetas</h1>
+        <div class="comprar-grid macetas-grid">
+            <div class="maceta-item" data-id="1">
+                <img src="assets/maceta1.png" alt="Maceta 1">
+                <h2>Maceta 1</h2>
+                <ul class="caracteristicas">
+                    <li>Ceramica</li>
+                    <li>10cm</li>
+                    <li>Marron</li>
+                </ul>
+                <div class="precio-agregar">
+                    <p>S/. 15</p>
+                    <div class="agregar">
+                        <button class="decrement" data-id="1">-</button>
+                        <input type="text" value="1" class="quantity" data-id="1" readonly>
+                        <button class="increment" data-id="1">+</button>
+                        <button class="btn-agregar" data-id="1">Agregar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="maceta-item" data-id="2">
+                <img src="assets/Macetas2.png" alt="Maceta 2">
+                <h2>Maceta 2</h2>
+                <ul class="caracteristicas">
+                    <li>Madera</li>
+                    <li>12cm</li>
+                    <li>Roja</li>
+                </ul>
+                <div class="precio-agregar">
+                    <p>S/. 20</p>
+                    <div class="agregar">
+                        <button class="decrement" data-id="2">-</button>
+                        <input type="text" value="1" class="quantity" data-id="2" readonly>
+                        <button class="increment" data-id="2">+</button>
+                        <button class="btn-agregar" data-id="2">Agregar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="maceta-item" data-id="3">
+                <img src="assets/Macetas3.png" alt="Maceta 3">
+                <h2>Maceta 3</h2>
+                <ul class="caracteristicas">
+                    <li>Ceramica</li>
+                    <li>20cm</li>
+                    <li>Gris</li>
+                </ul>
+                <div class="precio-agregar">
+                    <p>S/. 25</p>
+                    <div class="agregar">
+                        <button class="decrement" data-id="3">-</button>
+                        <input type="text" value="1" class="quantity" data-id="3" readonly>
+                        <button class="increment" data-id="3">+</button>
+                        <button class="btn-agregar" data-id="3">Agregar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="maceta-item" data-id="4">
+                <img src="assets/Macetas4.png" alt="Maceta 4">
+                <h2>Maceta 4</h2>
+                <ul class="caracteristicas">
+                    <li>Ceramica</li>
+                    <li>15cm</li>
+                    <li>Blanca</li>
+                </ul>
+                <div class="precio-agregar">
+                    <p>S/. 30</p>
+                    <div class="agregar">
+                        <button class="decrement" data-id="4">-</button>
+                        <input type="text" value="1" class="quantity" data-id="4" readonly>
+                        <button class="increment" data-id="4">+</button>
+                        <button class="btn-agregar" data-id="4">Agregar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="maceta-item" data-id="5">
+                <img src="assets/Macetas5.png" alt="Maceta 5">
+                <h2>Maceta 5</h2>
+                <ul class="caracteristicas">
+                    <li>Ceramica</li>
+                    <li>30cm</li>
+                    <li>roja</li>
+                </ul>
+                <div class="precio-agregar">
+                    <p>S/. 35</p>
+                    <div class="agregar">
+                        <button class="decrement" data-id="5">-</button>
+                        <input type="text" value="1" class="quantity" data-id="5" readonly>
+                        <button class="increment" data-id="5">+</button>
+                        <button class="btn-agregar" data-id="5">Agregar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="maceta-item" data-id="6">
+                <img src="assets/Macetas6.png" alt="Maceta 6">
+                <h2>Maceta 6</h2>
+                <ul class="caracteristicas">
+                    <li>Plastico</li>
+                    <li>15cm</li>
+                    <li>Amarillo</li>
+                </ul>
+                <div class="precio-agregar">
+                    <p>S/. 40</p>
+                    <div class="agregar">
+                        <button class="decrement" data-id="6">-</button>
+                        <input type="text" value="1" class="quantity" data-id="6" readonly>
+                        <button class="increment" data-id="6">+</button>
+                        <button class="btn-agregar" data-id="6">Agregar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Todos los derechos reservados. Verdora &copy; 2024</p>
+            <ul class="social-links">
+                <li><a href="https://www.facebook.com/profile.php?id=61562087771174" target="_blank">Facebook</a></li>
+                <li><a href="https://x.com/VerdoraProyect" target="_blank">Twitter (X)</a></li>
+                <li><a href="https://www.instagram.com/verdoraproyect/" target="_blank">Instagram</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

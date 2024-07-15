@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    color: #000;
+    font-family:Arial, Helvetica, sans-serif;
+}
+a {
+    text-decoration: none;
+}
+body {
+    background-color: #fff;
+    font-family: 'Noto Serif', serif;
+    min-height: 100vh;
+}
+nav {
+    max-width: 100%;
+    margin: auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, rgba(24, 3, 2, 0.562), rgba(51, 24, 24, 0.315));
+    background-color: #1a7234;
+}
+.nav-logo img {
+    width: 100px;
+    margin-left: 10px;
+    filter: brightness(1.2);
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+}
+.link a {
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    border: 1px solid white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.link a:hover {
+    background-color: #72A074;
+}
+.abrir-menu,
+.nav-mediaq .cerrar-menu {
+    display: none;
+}
+.comprar-section {
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 7rem; /*eliminar para el media quering*/
+}
+.comprar-section h1 {
+    font-size: 3rem;
+    color: #72A074;
+    margin-bottom: 1rem;
+}
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.search-bar input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 2px solid #72A074;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    width: 20rem;
+}
+.search-bar button {
+    padding: 0.5rem;
+    background-color: #72A074;
+    border: 2px solid #72A074;
+    border-left: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+.search-bar button img {
+    width: 20px;
+    height: 20px;
+}
+.comprar-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+.comprar-item {
+    background-color: #E8F5E9;
+    border: 1px solid #72A074;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.comprar-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+.comprar-item h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.comprar-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background: linear-gradient(to bottom, rgba(24, 3, 2, 0.562), rgba(51, 24, 24, 0.315));
+    background-color: rgb(2, 72, 23);
+}
+.footer-content {
+    text-align: center;
+}
+.footer-content p {
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+.social-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+.social-links li a {
+    color: #84B489;
+    font-size: 1.25rem;
+    transition: color 0.3s ease;
+}
+.social-links li a:hover {
+    color: #72A074;
+}
+.nav-mediaq{
+    z-index: 100;
+}
+@media (width < 725px) {
+    .abrir-menu {
+        display: block;
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: 1.5rem;
+    }
+
+    .nav-mediaq {
+        display: none;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(to bottom, rgba(24, 3, 2, 0.562), rgba(51, 24, 24, 0.315));
+        background-color: rgb(2, 72, 23);
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    }
+
+    .nav-mediaq.active {
+        display: flex;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .link a {
+        border: none;
+        color: #fff;
+        transition: all 0.3s ease;
+    }
+
+    .link a:hover {
+        background-color: transparent;
+        text-decoration: underline;
+    }
+    
+    .nav-mediaq .cerrar-menu {
+        display: block;
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .abrir-menu,
+    .nav-mediaq .cerrar-menu {
+    cursor: pointer;
+    }
+}

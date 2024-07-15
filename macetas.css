@@ -1,0 +1,159 @@
+.abrir-menu,
+.nav-mediaq .cerrar-menu {
+    display: none;
+}
+
+.comprar-section {
+    margin-bottom: 0;
+}
+
+.comprar-macetas{
+    background-color: #f0f0f0;
+    padding: 1rem 2rem 3rem;
+}
+
+.comprar-macetas h1{
+    padding: 1rem;
+}
+.selected {
+    background-color: rgba(37, 96, 54, 0.61);
+    border: 2px solid rgb(1, 36, 12);
+}
+
+.selected_text {
+    color: white;
+}
+
+.macetas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+}
+
+.maceta-item {
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.maceta-item:hover{
+    box-shadow: 5px 10px 1px rgba(0, 0, 0, 0.1);
+}
+.maceta-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.maceta-item h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.maceta-item .caracteristicas {
+    text-align: left;
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+}
+
+.maceta-item .caracteristicas li {
+    list-style: disc;
+    margin-bottom: 0.5rem;
+}
+
+.maceta-item .precio-agregar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.maceta-item .precio-agregar p {
+    font-size: 1.5rem;
+    color: #388E3C;
+}
+
+.maceta-item .agregar {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.maceta-item .agregar button {
+    padding: 0.5rem;
+    background-color: #72A074;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.maceta-item .agregar input {
+    width: 2rem;
+    text-align: center;
+}
+
+.maceta-item .btn-agregar {
+    background-color: #FFA726;
+}
+
+@media (width < 725px) {
+    .abrir-menu {
+        display: block;
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: 1.5rem;
+    }
+
+    .nav-mediaq {
+        display: none;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(to bottom, rgba(24, 3, 2, 0.562), rgba(51, 24, 24, 0.315));
+        background-color: rgb(2, 72, 23);
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    }
+
+    .nav-mediaq.active {
+        display: flex;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .link a {
+        border: none;
+        color: #fff;
+        transition: all 0.3s ease;
+    }
+
+    .link a:hover {
+        background-color: transparent;
+        text-decoration: underline;
+    }
+    
+    .nav-mediaq .cerrar-menu {
+        display: block;
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .abrir-menu,
+    .nav-mediaq .cerrar-menu {
+    cursor: pointer;
+    }
+}
